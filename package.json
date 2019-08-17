@@ -1,0 +1,26 @@
+{
+  "name": "Oauth",
+  "version": "1.0.0",
+  "description": "my first mongodb Node and Express Rest Api.",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^1.19.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SapeleD3/Oauth.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SapeleD3/Oauth/issues"
+  },
+  "homepage": "https://github.com/SapeleD3/Oauth#readme"
+}
