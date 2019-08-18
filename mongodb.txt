@@ -1,0 +1,47 @@
+REST API = representation state transfer
+- show dbs
+- use dbName = also creates the database if it does not exist
+- show collections
+- db.dropDatabase() = deletes a database in mongo
+- db.collectionName.remove({//where clause}) 
+- db = checks database
+- db.createCollection('collectionName')
+- db.collectionName.insert({
+        key: value
+    })
+- db.collectionName.find().pretty()
+- db.collectionName.find().forEach(function(doc) { print            (doct.name))})
+- db.collectionName.update({ key: value}. {
+    {
+        $set{
+            //when u want to update a particular field alone
+        }
+        newKey: newValue
+    },
+    {
+        upsert: true // to create new table if condition is not met and collection is not available
+    }
+})
+
+- db.collectionName.update({ key: value // where clause}, {
+    $inc: {key: numVal}
+})
+
+- db.collectionName.update({ key: value // where clause}, {
+    $rename: {key: newKeyname}
+})
+
+- db.collectionName.find({
+    key: {
+        $elemMatch: {
+            subKey: subValue;
+        }
+    }
+})
+
+- db.collectionName.creatrIndex({title: 'text'})
+- db.collectionName.find({
+    $text: {
+        $search: "\"collectionName T\""
+    }
+}).pretty()

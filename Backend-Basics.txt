@@ -1,0 +1,9 @@
+create folder 
+npm init -y in folder to create package.json file
+npm install express
+npm install nodemon
+npm install dotenv
+require ('dotenv').config();
+set up restful api
+import dependences
+use process.env.port to hide listen port
