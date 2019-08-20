@@ -38,7 +38,7 @@ router.post('/register', (req, res)=> {
         })
     } else {
         //validation passed
-        mem.findOne({emails : email})
+        mem.findOne({email : email})
         .then(user => {
             if(user) {
                 //user Exist

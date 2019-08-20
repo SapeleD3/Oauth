@@ -6,11 +6,8 @@ const flash = require('connect-flash');
 const sesssion = require('express-session')
 const app = express();
 
-//DB config
-const db = require('./config/keys').MongoURI;
-
 //connect to mongo
-mongoose.connect(db, {useNewUrlParser: true})
+mongoose.connect('mongodb://localhost/test', {useNewUrlParser: true})
     .then(()=> console.log('connected to dbs'))
     .catch(err => console.log(err));
 
